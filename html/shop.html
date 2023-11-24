@@ -45,7 +45,7 @@
 
 
 
-   <body>
+  <body>
     <!-- header -->
 
       <!--------back to top----------->
@@ -54,43 +54,48 @@
       <!-- end -->
 
     <section class="header-1">
-      <div class="nav-links" id="nav-links">
-        <!-- nav bar -->
-        <nav>
-            <a href="index.html"><img src="../images/logo.png" class="logo"></a>
-            <!-- nav-menu for mobile -->
-              <input type="checkbox" id="click">
-              <label for="click" class="menu-btn">
-              <i class="fas fa-bars"></i>
-            </label>
-            <!-- end -->
-            <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html">Rreth Nesh</a></li>
-            <!-- dropdown -->
-              <div class="dropdown">
-                <button class="dropbtn" >Shërbimet <i class="fa-solid fa-chevron-down"></i>
-                  <div class="dropdown-content">
-                    <a href="single.html">Internet</a>
-                    <a href="tv.html">TV</a>
-                    <a href="duo.html">Duo</a>
-                    <a href="premium.html" id="premium-btn">Premium</a>
+      <div class="header-div">
+        <div class="nav-links" id="nav-links">
+          <!-- nav bar -->
+          <nav>
+              <a href="index.html"><img src="../images/logo.png" class="logo"></a>
+              <!-- nav-menu for mobile -->
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+              </label>
+              <!-- end -->
+              <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">Rreth Nesh</a></li>
+                  <!-- dropdown -->
+                  <div class="dropdown">
+                    <button class="dropbtn" >Shërbimet <i class="fa-solid fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                      <a href="single.html">Internet</a>
+                      <a href="tv.html">TV</a>
+                      <a href="duo.html">Duo</a>
+                      <a href="premium.html" id="premium-btn">Premium</a>
+                    </div>
                   </div>
-              </div>
                   <!-- end -->
-                  <a href="shop.html" id="max-shop-btn">MaxShop <i class="fa-solid fa-cart-shopping"></i></a>
                   <li><a href="contact.html">Kontakti</a></li>
-                  <li><a href="../login/login.html">SignIn</a></li>
-                  <!-- other links on the navbar -->
-                  <div class="other-links">
-                    <a href="../html/privacy.html" id="privacy-policy">Privacy-Policy</a>
-                    <a href="https://www.speedtest.net/" target="_blank" class="test-button">Testo Shpejtësinë</a>
-                    <a href="../html/pagesa.html" id="pagesa-btn">e-Pagesa</a>
+                  <a href="shop.html" id="max-shop-btn">MaxShop <i class="fa-solid fa-cart-shopping"></i></a>
+                <!-- dropdown -->
+                <div class="dropdown">
+                  <button class="dropbtn" >Te Tjera <i class="fa-solid fa-chevron-down"></i>
+                  <div class="dropdown-content">
+                    <a href="../html/privacy.html">Privacy-Policy</a>
+                    <a href="https://www.speedtest.net/" target="_blank">Testo Shpejtësinë</a>
+                    <a href="..//html/pagesa.html" id="pagesa-btn">e-Pagesa</a>
                   </div>
-            </ul>
-       </nav>
-       <!-- end -->
-
+                </div>
+                <a href="../html/privacy.html" id="max-shop-btn">LogIn</a>
+              </ul>
+         </nav>
+         <!-- nav end -->
+        </div>
+      </div>
        
     <!-- main-box -->
     <section class="main-box">
@@ -108,10 +113,74 @@
         <img src="../images/shop-header-text.png" class="ngjyra" draggable="false">
       </div>
     </section>
-
-    <!-- section -->
-    <section class="">
-      
+    <!-- end -->
     </section>
+    <!-- end of the header -->
+
+
+    <!-- ofertat section -->
+    <div class="container">
+      <div class="ofertat-section">
+        <h2 class="ofertat-titulli"><span class="title-span">.Max</span>Shop</h2>
+        <h2 class="ofertat-nentitulli">Newphoria</h2>
+        <div class="ofertat-row">
+          
+          <!-- Iphones -->
+          <div class="ofertat-col">
+            <div class="ofertat-box">
+              <div class="ofertat-box-content">
+                <img src="../shop-images/iphone15-white.png" class="ofertat-img" draggable="false">
+              </div>
+              <h3 class="ofertat-box-title">iPhone 15</h3>
+              <h4 class="ofertat-box-color">White Titanium</h4>
+              <h5 class="ofertat-box-storage">128Gb</h5>
+              <h5 class="ofertat-box-price">Fillon nga <span class="title-span">€</span>799</h5>
+              <a href="" class="buy-button">Porosit Tani</a> 
+            </div>
+          </div>
+
+          <div class="ofertat-col">
+            <div class="ofertat-box">
+              <div class="ofertat-box-content">
+                <img src="../shop-images/iphone15pro-black.png" class="ofertat-img" draggable="false">
+              </div>
+              <h3 class="ofertat-box-title">iPhone 15 Pro</h3>
+              <h4 class="ofertat-box-color">Black Titanium</h4>
+              <div class="storage-box">
+                <h5 class="ofertat-box-storage">256Gb</h5>
+                <h5 class="ofertat-box-storage">512Gb</h5>
+                <h5 class="ofertat-box-storage">1Tb</h5>
+              </div>
+              <h5 class="ofertat-box-price">Fillon nga <span class="title-span">€</span>999</h5>
+              <a href="" class="buy-button">Porosit Tani</a> 
+            </div>
+          </div>
+
+          <div class="ofertat-col">
+            <div class="ofertat-box">
+              <div class="ofertat-box-content">
+                <img src="../shop-images/iphone15plus-green.png" class="ofertat-img" draggable="false">
+              </div>
+              <h3 class="ofertat-box-title">iPhone 15 Plus</h3>
+              <h4 class="ofertat-box-color">Green</h4>
+              <div class="storage-box">
+                <h5 class="ofertat-box-storage">128Gb</h5>
+                <h5 class="ofertat-box-storage">256Gb</h5>
+              </div>
+              <h5 class="ofertat-box-price">Fillon nga <span class="title-span">€</span>899</h5>
+              <a href="" class="buy-button">Porosit Tani</a> 
+            </div>
+          </div>
+          <!-- end -->
+
+        </div>
+      </div>
+    </div>
+    <!-- end of the iphones section -->
+
+    <!-- content -->
+
+      <!-- end -->
+    
   </body>
 </html>

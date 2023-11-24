@@ -1,10 +1,9 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: sans-serif , 'Poppins' , monospace;
+  font-family: 'Roboto Slab' monospace;
 }
 
-/* ================ */
 
 /*-----------back to top-------------------*/
 #myBtn {
@@ -28,15 +27,16 @@
   color: #fff;
   transition: 0.3s;
 }
-/* ----------------------- */
+
+/*-------------------------------*/ 
 
 
 .header-1{
-  background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.9)), url(../images/privacy.png);
+  background: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,1)), url(../images/tv-header-image.png);
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 55vh;
+  height: 50vh;
 }
 
 /* nav bar */
@@ -139,6 +139,22 @@ nav{
 }
 /* end */
 
+
+/* loginbutton */
+.login-btn{
+  text-decoration: none;
+  color: #e04700;
+  border: 1px solid #e04700;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.login-btn:hover{
+  color: #c1c1c1;
+  background-color: #e04700;
+  transition: 0.5s;
+}
+
 /*====== Dropdown Button ======*/
 .dropbtn{
   background-color: transparent;
@@ -236,7 +252,7 @@ input[type="checkbox"]{
     position: fixed;
     top: 100px;
     right: -100%;
-    background: var(--dark-mode);
+    background: #000;
     height: auto;
     width: 94%;
     text-align: center;
@@ -272,78 +288,81 @@ input[type="checkbox"]{
     background: none;
     color: #fff;
   }
-  .social-icons{
-    display: flex;
-  }
-  .active ,
-  nav ul li a:hover{
-    background: transparent;
-    box-shadow: none;
-  }
-
 }
 
-/* text-box */
-.text-box{
-  position: absolute;
-  top: 35%;
-  left: 10%
-}
+/* main */
 
-.title{
-  color: #f2f2f2;
+.main{
   display: flex;
-  justify-content: center;
-  font-size: 450%;
-  font-family: monospace;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2% 0 0 10%;
 }
 
-@media (max-width: 810px){
-
-  .title{
-    display: flex;
-    align-items: center;
-    font-size: 300%;
-  }
-}
-
-/* privacy-section */
-.col{
-  background-color: #fff;
-  width: 85%;
-  display: inline;
-}
-
-.text{
-  padding: 5% 10%;
-}
-
-.title-section{
-  padding-bottom: 1.5%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.subtitle{
-  padding-bottom: 1%;
+.main-title{
   color: #e04700;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto Slab';
+  font-size: 20px;
 }
 
-.p-text{
-  color: #515151;
+.main-title-2{
+  color: #f2f2f2;
+  font-family: 'Roboto Slab';
+  font-size: 45px;
 }
 
-/* footer */
-.footer-titulli{
-  color: #e04700;
+.main-image-box{
+  display: flex;
+  justify-content: flex-start;
 }
 
-.footer-other-links:hover{
+.main-img{
+  width: 550px;
+}
+
+.main-buttons{
+  padding-top: 1%;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-btn{
+  text-decoration: none;
+  border: 1px solid #e04700;
+  background-color: #e04700;
+  color: #f2f2f2;
+  padding: 9px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.main-btn:hover{
+  background-color: transparent;
   color: #e04700;
   transition: 0.4s;
 }
 
-.footer-bg{
-  padding-top: 1%;
-  background-color: #f2f2f2;
+/* end */
+
+@media (max-width: 810px){
+  .main{
+    padding: 10% 0 0 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-title{
+    font-size: 25px;
+  }
+
+  .main-title-2{
+    font-size: 30px;
+  }
 }
+
+/* END */
+/* ======= */
+
+
+/* content */
+

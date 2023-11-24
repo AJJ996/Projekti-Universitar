@@ -102,44 +102,19 @@ nav{
   color: #d5d5d5;
 }
 
-#privacy-policy{
-  font-size: 17px;
-  border: 1px solid #e04700;
-  margin-left: 15px;
-  margin-right: 10px;
-  padding: 5px 10px;
-  border-radius: 20px;
-  color: #e04700;
-  text-decoration: none;
-}
-
-#privacy-policy:hover{
-  background-color: #e04700;
-  color: #d5d5d5;
-  transition: 0.5s;
-  text-decoration: none;
-}
-
 #pagesa-btn{
   text-decoration: none;
-  color: #e04700;
+  color: #f2f2f2;
   border: 1px solid #e04700;
-  border-radius: 20px;
-  margin-left: 10px;
-  padding: 7px 15px;
-  background: transparent;
-  box-shadow: 0 0 5px #e04700 ,
-  0 0 25px #e04700 , 0 0 50px #e04700 ,
-  0 0 200px #e04700;
+  border-radius: 17px;
+  padding: 8px 15px;
+  background: #e04700;
 }
 
 #pagesa-btn:hover{
-  background-color: #e04700;
-  color: #fff;
+  background-color: transparent;
+  color: #000;
   transition: 0.5s;
-  box-shadow: 0 0 10px #e04700 ,
-  0 0 30px #e04700 , 0 0 52px #e04700 ,
-  0 0 200px #e04700;
 }
 
 #max-shop-btn{
@@ -162,7 +137,6 @@ nav{
   padding-top: 3%;
 }
 /* end */
-
 /*====== Dropdown Button ======*/
 .dropbtn{
   background-color: transparent;
@@ -353,7 +327,7 @@ input[type="checkbox"]{
   }
 
   .shop-header-png{
-    width: 290px;
+    width: 240px;
     display: flex;
   }
 
@@ -367,63 +341,142 @@ input[type="checkbox"]{
   }
 
   .ngjyra{
-    display: none;
+    width: 300px;
   }
 }
 
-/* specs style */
+/* ofertat-container */
 
-.specs{
-  display: flex;
+.ofertat-section{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 70px;
 }
 
-/* left */
-
-.specs-left{
-  position: absolute;
-  bottom: 55px;
-  left: 16%;
-  background-color: #9d9990;
+.ofertat-titulli{
+  font-size: 30px;
+  font-weight: 600;
   height: auto;
-  min-width: 23%;
-  border-radius: 20px;
-  box-shadow: 0 0 5px #9d9990 ,
-  0 0 25px #9d9990 , 0 0 50px #9d9990 ,
-  0 0 200px #9d9990;
+  color: #585858;
 }
 
-.items{
+.ofertat-nentitulli{
+  color: #8e8e8e;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 10px;
+  height: auto;
+}
+
+.ofertat-row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ofertat-col{
+  flex-basis: 25%;
+  background: #f1f1f1;
+  border-radius: 20px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+.ofertat-box{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  margin: 10px 0 5px 25px;
+  align-items: center;
 }
 
-.specs-text{
-  font-family: 'Roboto Slab';
+.ofertat-box-title{
+  padding-top: 7%;
+  color: #555;
+  font-size: 17px;
+  font-weight: 550;
 }
 
-/* right */
-.specs-right{
-  position: absolute;
-  bottom: 55px;
-  right: 14%;
-  background-color: #9d9990;
-  height: auto;
-  min-width: 23%;
+.ofertat-box-color{
+  border: 1px solid #e04700;
+  padding: 3px 7px;
   border-radius: 20px;
-  box-shadow: 0 0 5px #9d9990 ,
-  0 0 25px #9d9990 , 0 0 50px #9d9990 ,
-  0 0 200px #9d9990;
+  font-size: 17px;
+  font-family: 'Roboto Slab';
+  color: #e04700;
 }
 
-@media (max-width: 950px) {
-  .specs-right{
-    display: none;
-  }
+.storage-box{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
 
-  .specs-left{
-    display: none;
+.ofertat-box-storage{
+  font-size: 17px;
+  font-family: 'Roboto Slab';
+  color: #f2f2f2;
+  background-color: #e04700;
+  border: 1px solid #e04700;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.title-span{
+  color: #e04700;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.ofertat-box-price{
+  color: #797979;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 2%;
+}
+
+.buy-button{ 
+  text-decoration: none;
+  border: 1px solid #e04700;
+  border-radius: 20px;
+  background-color: #e04700;
+  padding: 8px 12px;
+  color: #f2f2f2;
+}
+
+.buy-button:hover{
+  background-color: transparent;
+  color: #e04700;
+  transition: 0.4s;
+}
+
+.ofertat-img{
+  width: 120px;
+}
+
+.ofertat-col:hover{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.6);
+  transition: 0.4s;
+}
+
+.ofertat-box-content{
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media(max-width: 870px){
+  .ofertat-row{
+      flex-direction: column;
   }
 }
+/* end */
+
+
+/* content */
+
+
+/* end */
