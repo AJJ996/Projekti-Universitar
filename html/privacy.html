@@ -7,6 +7,10 @@
       <link rel="icon" type="image/svg+xml" href="../images/favicon.png ">
       <title>MaxTv | Privacy-Policy</title>
 
+      <!-- scripts -->
+      <script src="../js/loader.js" defer></script>
+      <!-- end -->
+
 
      <!-- cdnjs and fonts-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,8 +38,14 @@
 
 
     <!-- livechat script -->
-      <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="b65d8e1e-3348-4973-8297-aae472135b4a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-    <!-- end -->
+    <!-- Start of LiveChat (www.livechat.com) code -->
+    <script>
+      window.__lc = window.__lc || {};
+      window.__lc.license = 16922856;
+      ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+    </script>
+    <noscript><a href="https://www.livechat.com/chat-with/16922856/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+    <!-- End of LiveChat code -->
     </head>
 
 
@@ -50,55 +60,88 @@
       <!-- end -->
 
 
-    <section class="header-1">
-      <div class="header-div">
-        <div class="nav-links" id="nav-links">
-          <!-- nav bar -->
-          <nav>
-              <a href="index.html"><img src="../images/logo.png" class="logo"></a>
-              <!-- nav-menu for mobile -->
-                <input type="checkbox" id="click">
-                <label for="click" class="menu-btn">
-                <i class="fas fa-bars"></i>
-              </label>
-              <!-- end -->
-              <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">Rreth Nesh</a></li>
-                  <!-- dropdown -->
-                  <div class="dropdown">
-                    <button class="dropbtn" >Shërbimet <i class="fa-solid fa-chevron-down"></i>
-                    <div class="dropdown-content">
-                      <a href="single.html">Internet</a>
-                      <a href="tv.html">TV</a>
-                      <a href="duo.html">Duo</a>
-                      <a href="premium.html" id="premium-btn">Premium</a>
-                    </div>
-                  </div>
-                  <!-- end -->
-                  <li><a href="contact.html">Kontakti</a></li>
-                  <a href="shop.html" id="max-shop-btn">MaxShop <i class="fa-solid fa-cart-shopping"></i></a>
-                <!-- dropdown -->
-                <div class="dropdown">
-                  <button class="dropbtn" >Te Tjera <i class="fa-solid fa-chevron-down"></i>
-                  <div class="dropdown-content">
-                    <a href="../html/privacy.html">Privacy-Policy</a>
-                    <a href="https://www.speedtest.net/" target="_blank">Testo Shpejtësinë</a>
-                    <a href="..//html/pagesa.html" id="pagesa-btn">e-Pagesa</a>
-                  </div>
+      <header class="header-1">
+        <div class="header-div">
+          <nav class="navbar navbar-expand-md bg-transparent bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+            <div class="container px-5">
+              <a class="navbar-brand" href="index.html">
+                <img src="../images/logo.png" alt="BootstrapBrain Logo" width="135" height="55">
+              </a>
+              <button class="navbar-toggler border-1 border-light text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <a href="../html/privacy.html" id="max-shop-btn">LogIn</a>
-              </ul>
-         </nav>
-         <!-- nav end -->
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <!-- home -->
+                    <li class="nav-item">
+                      <a class="nav-link text-light"  href="../html/index.html">Home</a>
+                    </li>
+                    <!-- end -->
+                    <!-- rreth nesh -->
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="../html/about.html">Rreth Nesh</a>
+                    </li>
+                    <!-- end -->
+                    <!-- sherbimet-dropdown -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#!" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shërbimet</a>
+                      <ul class="dropdown-menu border-0 shadow bsb-zoomIn" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="../html/single.html">Internet</a></li>
+                        <li><a class="dropdown-item" href="../html/tv.html">TV</a></li>
+                        <li><a class="dropdown-item" href="../html/duo.html">Duo</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../html/premium.html">Premium</a></li>
+                      </ul>
+                    </li>
+                    <!-- end -->
+                    <!-- kontakti -->
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="../html/contact.html">Kontakti</a>
+                    </li>
+                    <!-- end -->
+                    <!-- max-shop -->
+                    <li class="nav-item">
+                      <a class="nav-link" id="max-shop-btn" href="../html/shop.html">MaxShop <i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <!-- end -->
+                    <!-- te tjera-dropdown -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle"  id="home-btn" href="#!" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Të tjera</a>
+                      <ul class="dropdown-menu border-0 shadow bsb-zoomIn" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="../html/privacy.html">Privacy-Policy</a></li>
+                        <li><a class="dropdown-item" href="https://www.speedtest.net/">Testo Shpejtësinë</a></li>
+                        <li><a class="dropdown-item" href="../copyrights/copyright.html">Copyrights</a></li>
+                      </ul>
+                    </li>
+                    <!-- end -->
+                    <!-- login-button -->
+                    <li class="nav-item">
+                      <a class="nav-link" id="login-btn" href="../login/login.html">LogIn</a>
+                    </li>
+                    <!-- end -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- nav end -->
         </div>
-      </div>
 
         <!-- textbox div -->
          <div class="text-box">
             <h1 class="title">Privacy-Policy</h1><br>
          </div>
-      </section>
+         <!-- end  -->
+      </header>
 
       <!-- new section for privacy policy -->
       <div class="privacy-part">
@@ -151,7 +194,7 @@
             <a href="../html/net.html" class="text-reset">Internet</a>
           </p>
           <p>
-            <a href="../html/tv.thml" class="text-reset">TV</a>
+            <a href="../html/tv.html" class="text-reset">TV</a>
           </p>
           <p>
             <a href="../html/duo.html" class="text-reset">Duo</a>
@@ -205,10 +248,16 @@
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2023 Copyright:
-    <a class="text-reset fw-bold" href="https://maxtv-ks.net/">maxtv-ks.net</a>
+    <a class="text-reset fw-bold" href="../copyrights/copyright.html">Mëso më shumë</a>
   </div>
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+
+
+
+        <!-- loading screen -->
+        <div class="loader"><img src="../images/favicon.png"></div>
+        <!-- end of loading screen -->
     </body>
 </html>

@@ -6,7 +6,12 @@
       <link rel="stylesheet" href="../css/single.css">
       <link rel="icon" type="image/svg+xml" href="../images/favicon.png ">
       <title>MaxTv | Internet</title>
+      <script src="../js/video-backgrond.js" defer></script>
 
+      <!-- scripts -->
+      <script src="../js/buttons.js" defer></script>
+      <script src="../js/loader.js" defer></script>
+      <!-- end -->
 
      <!-- cdnjs and fonts-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +38,14 @@
       <!-- end -->
 
       <!-- livechat script -->
-      <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="b65d8e1e-3348-4973-8297-aae472135b4a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-      <!-- end -->
+    <!-- Start of LiveChat (www.livechat.com) code -->
+    <script>
+      window.__lc = window.__lc || {};
+      window.__lc.license = 16922856;
+      ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+    </script>
+    <noscript><a href="https://www.livechat.com/chat-with/16922856/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+    <!-- End of LiveChat code -->
     </head>
 
 
@@ -52,65 +63,283 @@
       <script src="../js/backbtn.js"></script>
       <!-- end -->
 
-    <section class="header-1">
-      <div class="header-div">
-        <div class="nav-links" id="nav-links">
-          <!-- nav bar -->
-          <nav>
-              <a href="index.html"><img src="../images/logo.png" class="logo"></a>
-              <!-- nav-menu for mobile -->
-                <input type="checkbox" id="click">
-                <label for="click" class="menu-btn">
-                <i class="fas fa-bars"></i>
-              </label>
-              <!-- end -->
-              <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">Rreth Nesh</a></li>
-                  <!-- dropdown -->
-                  <div class="dropdown">
-                    <button class="dropbtn" >Shërbimet <i class="fa-solid fa-chevron-down"></i>
-                    <div class="dropdown-content">
-                      <a href="single.html">Internet</a>
-                      <a href="tv.html">TV</a>
-                      <a href="duo.html">Duo</a>
-                      <a href="premium.html" id="premium-btn">Premium</a>
-                    </div>
-                  </div>
-                  <!-- end -->
-                  <li><a href="contact.html">Kontakti</a></li>
-                  <a href="shop.html" id="max-shop-btn">MaxShop <i class="fa-solid fa-cart-shopping"></i></a>
-                <!-- dropdown -->
-                <div class="dropdown">
-                  <button class="dropbtn" >Te Tjera <i class="fa-solid fa-chevron-down"></i>
-                  <div class="dropdown-content">
-                    <a href="../html/privacy.html">Privacy-Policy</a>
-                    <a href="https://www.speedtest.net/" target="_blank">Testo Shpejtësinë</a>
-                    <a href="..//html/pagesa.html" id="pagesa-btn">e-Pagesa</a>
-                  </div>
+      <header class="header-1">
+        <div class="header-div">
+          <nav class="navbar navbar-expand-md bg-transparent bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+            <div class="container px-5">
+              <a class="navbar-brand" href="index.html">
+                <img src="../images/logo.png" alt="BootstrapBrain Logo" width="135" height="55">
+              </a>
+              <button class="navbar-toggler border-1 border-light text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <a href="../login/login.html" id="max-shop-btn">LogIn</a>
-              </ul>
-         </nav>
-         <!-- nav end -->
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+
+                    <li class="nav-item">
+                      <a class="nav-link text-light"  href="../html/index.html">Home</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="../html/about.html">Rreth Nesh</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light"  id="home-btn" href="#!" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shërbimet</a>
+                      <ul class="dropdown-menu border-0 shadow bsb-zoomIn" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="../html/single.html">Internet</a></li>
+                        <li><a class="dropdown-item" href="../html/tv.html">TV</a></li>
+                        <li><a class="dropdown-item" href="../html/duo.html">Duo</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../html/premium.html">Premium</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="../html/contact.html">Kontakti</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" id="max-shop-btn" href="../html/shop.html">MaxShop <i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#!" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Të tjera</a>
+                      <ul class="dropdown-menu border-0 shadow bsb-zoomIn" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="../html/privacy.html">Privacy-Policy</a></li>
+                        <li><a class="dropdown-item" href="https://www.speedtest.net/">Testo Shpejtësinë</a></li>
+                        <li><a class="dropdown-item" href="../copyrights/copyright.html">Copyrights</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" id="login-btn" href="../login/login.html">LogIn</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- nav end -->
         </div>
-      </div>
 
       <!-- main -->
       <div class="main">
         <h2 class="main-title">lidhu me botën</h2>
           <h2 class="main-title-2">Internet Super i Shpejtë</h2>
           <div class="main-buttons">
-            <a href="" class="main-btn">Më Shumë</a>
+            <a href="" class="main-btn" id="internet-main-btn">Më Shumë</a>
           </div>
         </div>
       <!-- end -->
-    </section>  
+    </header>  
 
-    <!-- content -->
-    <div class="container">
+    
+      <!-- net sherbimet -->
+      <div class="container" id="net-id">
+        <div class="net">
+          <h2 class="sherbimet-titulli">Shërbime Interneti</h2>
+          <h6 class="sherbimet-nentitulli">zgjedhni pakon qe ju pershtatet</h6>
+          <div class="net-row">
+            <!-- max-net -->
+            <div class="net-col">
+              <div class="net-box-content">
+                <i class="fa-solid fa-ethernet net-icon"></i>
+                <h4 class="net-titulli">MAXnet</h4>
+                <h3 class="net-cmimi">€<span class="cmimi-number">99</span>/vit</h3>
+                <div class="net-kushtet">
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> DOWNLOAD 50MBPS</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> UPLOAD 50MBPS</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> MBËSHTETJE 24 / 7</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> KYQJE SUPER E SHPEJT</h5>
+                </div>
+                <div class="net-btn-box">
+                  <a href="" class="net-btn">Porosit Tani</a>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
 
+            <!-- maxnet plus -->
+            <div class="net-col">
+              <div class="net-box-content">
+                <i class="fa-solid fa-ethernet net-icon"></i>
+                <h4 class="net-titulli">MAXnet <span class="titulli-span">Plus</span></h4>
+                <h3 class="net-cmimi">€<span class="cmimi-number">149</span>/vit</h3>
+                <div class="net-kushtet">
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> DOWNLOAD 100 MBPS</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> UPLOAD 100 MBPS</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> MBËSHTETJE 24 / 7</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> KYQJE SUPER E SHPEJT</h5>
+                </div>
+                <div class="net-btn-box">
+                  <a href="" class="net-btn">Porosit Tani</a>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+
+            <!-- maxnet-pro -->
+            <div class="net-col">
+              <div class="net-box-content">
+                <i class="fa-solid fa-ethernet net-icon"></i>
+                <h4 class="net-titulli">MAXnet <span class="titulli-span">Pro</span></h4>
+                <h3 class="net-cmimi">€<span class="cmimi-number">199</span>/vit</h3>
+                <div class="net-kushtet">
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> DOWNLOAD 500 MBPS</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> UPLOAD 500 MBPS</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> MBËSHTETJE 24 / 7</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> KYQJE SUPER E SHPEJT</h5>
+                </div>
+                <div class="net-btn-box">
+                  <a href="" class="net-btn">Porosit Tani</a>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+
+            <!-- maxnet- mega -->
+            <div class="net-col">
+              <div class="net-box-content">
+                <i class="fa-solid fa-ethernet net-icon"></i>
+                <h4 class="net-titulli">MAXnet <span class="titulli-span">Mega</span></h4>
+                <h3 class="net-cmimi">€<span class="cmimi-number">249</span>/vit</h3>
+                <div class="net-kushtet">
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> DOWNLOAD 1GBPS</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> UPLOAD 1GBPS</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> MBËSHTETJE 24 / 7</h5>
+                  <h5 class="net-kushtet-text"><i class="fa-solid fa-check net-icon-2"></i> KYQJE SUPER E SHPEJT</h5>
+                </div>
+                <div class="net-btn-box">
+                  <a href="" class="net-btn">Porosit Tani</a>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+
+    <!-- video-content -->
+      <div class="video-container">
+        <video autoplay muted loop id="video-background">
+            <source src="../images/internet-background.mp4" type="video/mp4">
+        </video>
+        <div class="video-content">
+            <h3 class="video-first-subtitle">shërbime superiore</h3>
+            <h3 class="video-title">Çmime preferenciale!</h3>
+        </div>
     </div>
     <!-- end -->
+
+
+      <!-- Footer -->
+      <footer class="text-center text-lg-start text-muted footer-bg">
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start footer-content">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <a href="index.html"><img src="../images/logo.png"></a>
+                </h6>
+                <p>
+                  MAXTV ofron një ndër rrjetet më të përparuara në Skenderaj, shërbime të internetit përmes fijeve optike, rrjetit koaksial, shërbimeve te IPTV dhe OTT në të gjithë territorin e komunës së Skenderajit.
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4 footer-titulli">
+                  Sherbimet
+                </h6>
+                <p>
+                  <a href="../html/net.html" class="text-reset">Internet</a>
+                </p>
+                <p>
+                  <a href="../html/tv.html" class="text-reset">TV</a>
+                </p>
+                <p>
+                  <a href="../html/duo.html" class="text-reset">Duo</a>
+                </p>
+                <p>
+                  <a href="../html/premium" class="text-reset">Premium</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4 footer-titulli">
+                  Të tjera
+                </h6>
+                <p>
+                  <a href="../html/about.html" class="text-reset">Rreth Nesh</a>
+                </p>
+                <p>
+                  <a href="../html/shop.html" class="text-reset">MaxShop</a>
+                </p>
+                <p>
+                  <a href="../html/pagesa.html" class="text-reset">e-Pagesa</a>
+                </p>
+                <p>
+                  <a href="../html/privacy.html" class="text-reset">Privacy-Policy</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4 footer-titulli">Kontakti</h6>
+                <p>
+                  <i class="fa-solid fa-building me-3"></i></i> Rr. Ilaz Kodra Nr. 134 Skenderaj,Kosovë
+                </p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  <a href="mailto:support@maxtv-ks.net">support@maxtv-ks.net</a>
+                </p>
+                <p>
+                  <i class="fas fa-phone me-3"></i><a href="tel:044991992">044-991-992</a>
+                </p>
+              </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold" href="../copyrights/copyright.html">Mëso më shumë</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer end -->
+
+
+
+<!-- loading screen -->
+<div class="loader"><img src="../images/favicon.png"></div>
+<!-- end of loading screen -->
   </body>
 </html>

@@ -7,6 +7,10 @@
       <link rel="icon" type="image/svg+xml" href="../images/favicon.png ">
       <title>MaxShop | Shitje & more</title>
 
+      <!-- scripts -->
+      <script src="../js/iphones.js" defer></script>
+      <script src="../js/loader.js" defer></script>
+      <!-- end -->
 
      <!-- cdnjs and fonts-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +37,14 @@
     <!-- end -->
 
     <!-- livechat script -->
-      <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="b65d8e1e-3348-4973-8297-aae472135b4a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-    <!-- end -->
+    <!-- Start of LiveChat (www.livechat.com) code -->
+    <script>
+      window.__lc = window.__lc || {};
+      window.__lc.license = 16922856;
+      ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+    </script>
+    <noscript><a href="https://www.livechat.com/chat-with/16922856/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+    <!-- End of LiveChat code -->
     </head>
 
 
@@ -45,142 +55,383 @@
 
 
 
-  <body>
-    <!-- header -->
+    <body>
+      <!-- header -->
 
       <!--------back to top----------->
       <button onclick="topFunction()" id="myBtn" title="Go to top">Shko lart</button>
       <script src="../js/backbtn.js"></script>
       <!-- end -->
 
-    <section class="header-1">
-      <div class="header-div">
-        <div class="nav-links" id="nav-links">
-          <!-- nav bar -->
-          <nav>
-              <a href="index.html"><img src="../images/logo.png" class="logo"></a>
-              <!-- nav-menu for mobile -->
-                <input type="checkbox" id="click">
-                <label for="click" class="menu-btn">
-                <i class="fas fa-bars"></i>
-              </label>
-              <!-- end -->
-              <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">Rreth Nesh</a></li>
-                  <!-- dropdown -->
-                  <div class="dropdown">
-                    <button class="dropbtn" >Shërbimet <i class="fa-solid fa-chevron-down"></i>
-                    <div class="dropdown-content">
-                      <a href="single.html">Internet</a>
-                      <a href="tv.html">TV</a>
-                      <a href="duo.html">Duo</a>
-                      <a href="premium.html" id="premium-btn">Premium</a>
-                    </div>
-                  </div>
-                  <!-- end -->
-                  <li><a href="contact.html">Kontakti</a></li>
-                  <a href="shop.html" id="max-shop-btn">MaxShop <i class="fa-solid fa-cart-shopping"></i></a>
-                <!-- dropdown -->
-                <div class="dropdown">
-                  <button class="dropbtn" >Te Tjera <i class="fa-solid fa-chevron-down"></i>
-                  <div class="dropdown-content">
-                    <a href="../html/privacy.html">Privacy-Policy</a>
-                    <a href="https://www.speedtest.net/" target="_blank">Testo Shpejtësinë</a>
-                    <a href="..//html/pagesa.html" id="pagesa-btn">e-Pagesa</a>
-                  </div>
+      <header class="header-1">
+        <div class="header-div">
+          <nav class="navbar navbar-expand-md bg-transparent bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+            <div class="container px-5">
+              <a class="navbar-brand" href="index.html">
+                <img src="../images/logo.png" alt="BootstrapBrain Logo" width="135" height="55">
+              </a>
+              <button class="navbar-toggler border-1 border-light text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <a href="../html/privacy.html" id="max-shop-btn">LogIn</a>
-              </ul>
-         </nav>
-         <!-- nav end -->
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="../html/index.html">Home</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="../html/about.html">Rreth Nesh</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#!" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shërbimet</a>
+                      <ul class="dropdown-menu border-0 shadow bsb-zoomIn" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="../html/single.html">Internet</a></li>
+                        <li><a class="dropdown-item" href="../html/tv.html">TV</a></li>
+                        <li><a class="dropdown-item" href="../html/duo.html">Duo</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../html/premium.html">Premium</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="../html/contact.html">Kontakti</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" id="max-shop-btn" href="../html/shop.html">MaxShop <i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#!" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Të tjera</a>
+                      <ul class="dropdown-menu border-0 shadow bsb-zoomIn" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="../html/privacy.html">Privacy-Policy</a></li>
+                        <li><a class="dropdown-item" href="https://www.speedtest.net/">Testo Shpejtësinë</a></li>
+                        <li><a class="dropdown-item" href="../copyrights/copyright.html">Copyrights</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" id="login-btn" href="../login/login.html">LogIn</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- nav end -->
         </div>
-      </div>
        
-    <!-- main-box -->
-    <section class="main-box">
-      <!-- box contanier -->
-        <div class="titulli-box">
-          <h1 class="titulli">iPhone 15 Pro Max</h1>
-        </div>
-      <!-- box-img -->
-      <div class="box-img">
-        <img src="../images/shop-header-img.png" class="shop-header-png" draggable="false">
-        <img src="../images/shop-header-img-desktop.png" class="shop-header-desktop" draggable="false">
-      </div>
-      <!-- ngjyra-div -->
-      <div class="ngjyra-box">
-        <img src="../images/shop-header-text.png" class="ngjyra" draggable="false">
-      </div>
-    </section>
-    <!-- end -->
-    </section>
-    <!-- end of the header -->
+        <!-- main-box -->
+        <section class="main-box">
+          <!-- box contanier -->
+          <div class="titulli-box">
+            <h1 class="titulli">iPhone 15 Pro Max</h1>
+          </div>
+          <!-- box-img -->
+          <div class="box-img">
+            <img src="../images/shop-header-img.png" class="shop-header-png" draggable="false">
+            <img src="../images/shop-header-img-desktop.png" class="shop-header-desktop" draggable="false">
+          </div>
+          <!-- ngjyra-div -->
+          <div class="ngjyra-box">
+            <img src="../images/shop-header-text.png" class="ngjyra" draggable="false">
+          </div>
+        </section>
+        <!-- end -->
+      </header>
+      <!-- end of the header -->
 
 
-    <!-- ofertat section -->
-    <div class="container">
-      <div class="ofertat-section">
-        <h2 class="ofertat-titulli"><span class="title-span">.Max</span>Shop</h2>
-        <h2 class="ofertat-nentitulli">Newphoria</h2>
-        <div class="ofertat-row">
+      <!--iphone ofertat section -->
+      <div class="container">
+        <div class="ofertat-section">
+          <h2 class="ofertat-titulli"><span class="title-span">Max</span>Shop.</h2>
+          <h2 class="ofertat-nentitulli">Newphoria.</h2>
+          <div class="ofertat-row">
           
-          <!-- Iphones -->
-          <div class="ofertat-col">
-            <div class="ofertat-box">
-              <div class="ofertat-box-content">
-                <img src="../shop-images/iphone15-white.png" class="ofertat-img" draggable="false">
+            <!-- Iphone 15 -->
+            <div class="ofertat-col">
+              <div class="ofertat-box" id="iphone15">
+                <div class="ofertat-box-content">
+                  <img src="../shop-images/iphone15-blue.png" class="ofertat-img" id="iphone15Image" draggable="false">
+                </div>
+                <h3 class="ofertat-box-title">iPhone 15</h3>
+                <div class="color-options">
+                  <button class="ofertat-box-color active-color" onclick="updateColor('iphone15', 'Blue', this)">Blue</button>
+                  <button class="ofertat-box-color" onclick="updateColor('iphone15', 'Black', this)">Black</button>
+                  <button class="ofertat-box-color" onclick="updateColor('iphone15', 'Yellow', this)">Yellow</button>
+                </div>
+                <div class="storage-box">
+                  <button class="ofertat-box-storage active" onclick="updatePrice('iphone15', 799, this)">128Gb</button>
+                  <button class="ofertat-box-storage" onclick="updatePrice('iphone15', 899, this)">256Gb</button>
+                  <button class="ofertat-box-storage" onclick="updatePrice('iphone15', 999, this)">512Gb</button>
+                </div>
+                <div id="dynamicPriceContainer" class="dynamicPriceContainer">
+                  <h5 class="ofertat-box-price">Fillon nga <span class="title-span">€</span><span class="price-span">799</span></h5>
+                </div>
+                <a href="" class="buy-button">Porosit Tani</a> 
               </div>
-              <h3 class="ofertat-box-title">iPhone 15</h3>
-              <h4 class="ofertat-box-color">White Titanium</h4>
-              <h5 class="ofertat-box-storage">128Gb</h5>
-              <h5 class="ofertat-box-price">Fillon nga <span class="title-span">€</span>799</h5>
-              <a href="" class="buy-button">Porosit Tani</a> 
             </div>
-          </div>
-
-          <div class="ofertat-col">
-            <div class="ofertat-box">
-              <div class="ofertat-box-content">
-                <img src="../shop-images/iphone15pro-black.png" class="ofertat-img" draggable="false">
+            <!-- end -->
+          
+            <!-- iphone 15 pro -->
+            <div class="ofertat-col">
+              <div class="ofertat-box" id="iphone15Pro">
+                <div class="ofertat-box-content">
+                  <img src="../shop-images/iphone15pro-black.png" class="ofertat-img" draggable="false">
+                </div>
+                <h3 class="ofertat-box-title">iPhone 15 Pro</h3>
+                <div class="color-options">
+                  <button class="ofertat-box-color active-color" onclick="updateColor('iphone15Pro', 'Black', this)">Black</button>
+                  <button class="ofertat-box-color" onclick="updateColor('iphone15Pro', 'Natural', this)">Natural</button>
+                  <button class="ofertat-box-color" onclick="updateColor('iphone15Pro', 'Blue', this)">Blue</button>
+                </div>
+                <div class="storage-box">
+                  <button class="ofertat-box-storage active" onclick="updatePrice('iphone15Pro', 999, this)">256Gb</button>
+                  <button class="ofertat-box-storage" onclick="updatePrice('iphone15Pro', 1099, this)">512Gb</button>
+                  <button class="ofertat-box-storage" onclick="updatePrice('iphone15Pro', 1199, this)">1Tb</button>
+                </div>
+                <div class="dynamicPriceContainer">
+                  <h5 class="ofertat-box-price">Fillon nga <span class="title-span">€</span><span class="price-span">999</span></h5>
+                </div>
+                <a href="" class="buy-button">Porosit Tani</a> 
               </div>
-              <h3 class="ofertat-box-title">iPhone 15 Pro</h3>
-              <h4 class="ofertat-box-color">Black Titanium</h4>
-              <div class="storage-box">
-                <h5 class="ofertat-box-storage">256Gb</h5>
-                <h5 class="ofertat-box-storage">512Gb</h5>
-                <h5 class="ofertat-box-storage">1Tb</h5>
-              </div>
-              <h5 class="ofertat-box-price">Fillon nga <span class="title-span">€</span>999</h5>
-              <a href="" class="buy-button">Porosit Tani</a> 
             </div>
-          </div>
-
-          <div class="ofertat-col">
-            <div class="ofertat-box">
-              <div class="ofertat-box-content">
-                <img src="../shop-images/iphone15plus-green.png" class="ofertat-img" draggable="false">
+            <!-- end -->
+          
+            <!-- iphone 14 plus -->
+            <div class="ofertat-col">
+              <div class="ofertat-box" id="iphone14Plus">
+                <div class="ofertat-box-content">
+                  <img src="../shop-images/iphone14plus-red.png" class="ofertat-img" draggable="false">
+                </div>
+                <h3 class="ofertat-box-title">iPhone 14 Plus</h3>
+                <div class="color-options">
+                  <button class="ofertat-box-color active-color" onclick="updateColor('iphone14Plus', 'Red', this)">Red</button>
+                  <button class="ofertat-box-color" onclick="updateColor('iphone14Plus', 'Blue', this)">Blue</button>
+                  <button class="ofertat-box-color" onclick="updateColor('iphone14Plus', 'Purple', this)">Purple</button>
+                </div>
+                <div class="storage-box">
+                  <button class="ofertat-box-storage active" onclick="updatePrice('iphone14Plus', 620, this)">128Gb</button>
+                  <button class="ofertat-box-storage" onclick="updatePrice('iphone14Plus', 775, this)">256Gb</button>
+                </div>
+                <div class="dynamicPriceContainer">
+                  <h5 class="ofertat-box-price">Fillon nga <span class="title-span">€</span><span class="price-span">620</span></h5>
+                </div>
+                <a href="" class="buy-button">Porosit Tani</a> 
               </div>
-              <h3 class="ofertat-box-title">iPhone 15 Plus</h3>
-              <h4 class="ofertat-box-color">Green</h4>
-              <div class="storage-box">
-                <h5 class="ofertat-box-storage">128Gb</h5>
-                <h5 class="ofertat-box-storage">256Gb</h5>
-              </div>
-              <h5 class="ofertat-box-price">Fillon nga <span class="title-span">€</span>899</h5>
-              <a href="" class="buy-button">Porosit Tani</a> 
             </div>
+            <!-- end -->
           </div>
-          <!-- end -->
-
         </div>
       </div>
-    </div>
-    <!-- end of the iphones section -->
+      <!-- end of the iphones section -->
 
-    <!-- content -->
 
+      <!-- video-content -->
+      <div class="video-container">
+        <video autoplay muted loop id="video-background">
+          <source src="../shop-images/apple.mp4" type="video/mp4">
+        </video>
+        <div class="video-content">
+          <h3 class="video-first-subtitle">If you can dream it,
+            Mac can do it.</h3>
+          <h3 class="video-title">Mind-Blowing. Head-Turning.</h3>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- macs -->
+      <div class="container">
+        <div class="mac-ofertat-section">
+          <h2 class="mac-ofertat-titulli">Get to know <span class="mac-title-span">Mac.</span></h2>
+          <div class="mac-ofertat-row">
+          
+            <!-- macbook air -->
+            <div class="mac-ofertat-col">
+              <div class="mac-ofertat-box" id="MacBookAir">
+                <div class="mac-ofertat-box-content">
+                  <img src="../shop-images/MacBookAir-Spacegray.png" class="mac-ofertat-img" id="MacBookAirImage" draggable="false">
+                </div>
+                <h3 class="mac-ofertat-box-title">MacBook Air</h3>
+                <div class="mac-color-options">
+                  <button class="ofertat-box-color active-color" onclick="updateColor('MacBookAir', 'Space Gray', this)">Space Gray</button>
+                  <button class="ofertat-box-color" onclick="updateColor('MacBookAir', 'Silver', this)">Silver</button>
+                  <button class="ofertat-box-color" onclick="updateColor('MacBookAir', 'Midnight', this)">Midnight</button>
+                </div>
+                <div class="mac-size-options">
+                  <button class="ofertat-box-color active" onclick="updateSize('MacBookAir', 999, this)">13" (M1 chip)</button>
+                  <button class="ofertat-box-color" onclick="updateSize('MacBookAir', 1299, this)">15" (M2 chip)</button>
+                </div>
+                <div id="mac-dynamicPriceContainer" class="mac-dynamicPriceContainer">
+                  <h5 class="mac-ofertat-box-price">Fillon nga <span class="mac-title-span">€</span><span class="mac-price-span">999</span></h5>
+                </div>
+                <a href="" class="mac-buy-button">Porosit Tani</a> 
+              </div>
+            </div>
+            <!-- end -->
+          
+            <!-- Macbook pro -->
+            <div class="mac-ofertat-col">
+              <div class="mac-ofertat-box" id="MacBookPro">
+                <div class="mac-ofertat-box-content">
+                  <img src="../shop-images/MacBookPro-Spacegray.png" class="mac-ofertat-img" id="MacBookProImage" draggable="false">
+                </div>
+                <h3 class="mac-ofertat-box-title">MacBook Pro</h3>
+                <div class="mac-color-options">
+                  <button class="ofertat-box-color active-color" onclick="updateColor('MacBookPro', 'Space Gray', this)">Space Gray</button>
+                  <button class="ofertat-box-color" onclick="updateColor('MacBookPro', 'Silver', this)">Silver</button>
+                </div>
+                <div class="mac-size-options">
+                  <button class="ofertat-box-color active" onclick="updateSize('MacBookPro', 1599, this)">14" (M3 chip)</button>
+                  <button class="ofertat-box-color" onclick="updateSize('MacBookPro', 2499, this)">16" (M3 chip)</button>
+                </div>
+                <div id="mac-dynamicPriceContainer" class="mac-dynamicPriceContainer">
+                  <h5 class="mac-ofertat-box-price">Fillon nga <span class="mac-title-span">€</span><span class="mac-price-span">1599</span></h5>
+                </div>
+                <a href="" class="mac-buy-button">Porosit Tani</a> 
+              </div>
+            </div>
+            <!-- end -->
+          
+            <!-- imac -->
+            <div class="mac-ofertat-col">
+              <div class="mac-ofertat-box" id="iMac">
+                <div class="mac-ofertat-box-content">
+                  <img src="../shop-images/iMac-Green.png" class="mac-ofertat-img" id="iMacImage" draggable="false">
+                </div>
+                <h3 class="mac-ofertat-box-title">iMac</h3>
+                <div class="mac-color-options">
+                  <button class="ofertat-box-color active-color" onclick="updateColor('iMac', 'Green', this)">Green</button>
+                  <button class="ofertat-box-color" onclick="updateColor('iMac', 'Pink', this)">Pink</button>
+                  <button class="ofertat-box-color" onclick="updateColor('iMac', 'Orange', this)">Orange</button>
+                </div>
+                <div class="mac-size-options">
+                  <button class="ofertat-box-color active" onclick="updateSize('iMac', 1299, this)">(M3)</button>
+                  <button class="ofertat-box-color" onclick="updateSize('iMac', 1699, this)">(M3 Pro)</button>
+                  <button class="ofertat-box-color" onclick="updateSize('iMac', 1999, this)">(M3 Max)</button>
+                </div>
+                <div id="mac-dynamicPriceContainer" class="mac-dynamicPriceContainer">
+                  <h5 class="mac-ofertat-box-price">Fillon nga <span class="mac-title-span">€</span><span class="mac-price-span">1599</span></h5>
+                </div>
+                <a href="" class="mac-buy-button">Porosit Tani</a> 
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+        </div>
+      </div>
       <!-- end -->
     
-  </body>
-</html>
+
+  
+      <!-- Footer -->
+      <footer class="text-center text-lg-start text-muted footer-bg">
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start footer-content">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <a href="index.html"><img src="../images/logo.png"></a>
+                </h6>
+                <p>
+                  MAXTV ofron një ndër rrjetet më të përparuara në Skenderaj, shërbime të internetit përmes fijeve optike, rrjetit koaksial, shërbimeve te IPTV dhe OTT në të gjithë territorin e komunës së Skenderajit.
+                </p>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4 footer-titulli">
+                  Sherbimet
+                </h6>
+                <p>
+                  <a href="../html/net.html" class="text-reset">Internet</a>
+                </p>
+                <p>
+                  <a href="../html/tv.html" class="text-reset">TV</a>
+                </p>
+                <p>
+                  <a href="../html/duo.html" class="text-reset">Duo</a>
+                </p>
+                <p>
+                  <a href="../html/premium" class="text-reset">Premium</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4 footer-titulli">
+                  Të tjera
+                </h6>
+                <p>
+                  <a href="../html/about.html" class="text-reset">Rreth Nesh</a>
+                </p>
+                <p>
+                  <a href="../html/shop.html" class="text-reset">MaxShop</a>
+                </p>
+                <p>
+                  <a href="../html/pagesa.html" class="text-reset">e-Pagesa</a>
+                </p>
+                <p>
+                  <a href="../html/privacy.html" class="text-reset">Privacy-Policy</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4 footer-titulli">Kontakti</h6>
+                <p>
+                  <i class="fa-solid fa-building me-3"></i></i> Rr. Ilaz Kodra Nr. 134 Skenderaj,Kosovë
+                </p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  <a href="mailto:support@maxtv-ks.net">support@maxtv-ks.net</a>
+                </p>
+                <p>
+                  <i class="fas fa-phone me-3"></i><a href="tel:044991992">044-991-992</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold" href="../copyrights/copyright.html">Mëso më shumë</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer end -->
+
+
+
+        <!-- loading screen -->
+        <div class="loader"><img src="../images/favicon.png"></div>
+        <!-- end of loading screen -->
+    </body>
+  </html>
