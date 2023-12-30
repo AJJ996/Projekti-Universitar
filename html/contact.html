@@ -129,15 +129,24 @@
           <h2 class="main-title">na kontakto më poshtë</h2>
           <h2 class="main-title-2">Konatkti</h2>
             <div class="main-buttons">
-              <a href="" class="main-btn" id="about-main-btn">Më Shumë</a>
+              <a href="" class="main-btn" id="contact-main-btn">Më Shumë</a>
             </div>
         </div>
         <!-- end -->
+
+        <!-- script of main-btn -->
+        <script>
+          document.getElementById("contact-main-btn").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default button behavior
+            document.getElementById("contact-id").scrollIntoView({ behavior: 'smooth' });
+          });
+        </script>
+      <!-- end -->
       </header>
 
 
       <section id="contact">
-        <div class="container-contact">
+        <div class="container-contact" id="contact-id">
             <div class="contact-form">
                 <h2>Na kontaktoni</h2>
                 <p> Ju lutemi plotësoni formularin e mëposhtëm dhe ne do t'ju kontaktojmë sa më shpejt të jetë e mundur.</p>

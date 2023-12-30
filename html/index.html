@@ -165,7 +165,25 @@
           </div>
         </div>
         <!-- end -->
+
+
+        <!-- script of the main-buttons -->
+        <script>
+          document.getElementById("main-btn").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default button behavior
+            document.getElementById("sherbimet-box").scrollIntoView({ behavior: 'smooth' });
+          });
+        </script>
+        <!-- main-button 2 -->
+        <script>
+          document.getElementById("main-btn-2").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default button behavior
+            document.getElementById("net-sherbimet-id").scrollIntoView({ behavior: 'smooth' });
+          });
+        </script>
+        <!-- end -->
       </header>
+      <!-- end of header -->
 
       <!-- content section -->
       <!-- Pako Ofertat -->

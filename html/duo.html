@@ -136,38 +136,48 @@
         <h2 class="main-title">internet dhe tv</h2>
           <h2 class="main-title-2">DUO</h2>
           <div class="main-buttons">
-            <a href="" class="main-btn" id="internet-main-btn">Më Shumë</a>
+            <a href="" class="main-btn" id="duo-main-btn">Më Shumë</a>
           </div>
-        </div>
+      </div>
+      <!-- end -->
+
+      <!-- script of main-btn -->
+      <script>
+        document.getElementById("duo-main-btn").addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent the default button behavior
+          document.getElementById("duo-id").scrollIntoView({ behavior: 'smooth' });
+        });
+      </script>
       <!-- end -->
     </header>  
     <!-- header end -->
 
 
-    <!-- tv kanalet -->
+
+      <!-- tv kanalet -->
         <!-- sports-logos -->
         <div class="container">
-          <h3 class="channels-titulli">Të gjitha ligat superiore</h3>
+          <h3 class="channels-titulli">Të gjitha kanalet kryesore</h3>
           <div class="sport-logos">
-            <img src="../sports-images/champions-league.png" class="logo-active" draggable="false">
-            <img src="../sports-images/prem.png" draggable="false">
-            <img src="../sports-images/laliga.png" draggable="false">
-            <img src="../sports-images/bundesliga.png" draggable="false">
-            <img src="../sports-images/seriea.png" draggable="false">
-            <img src="../sports-images/L1.png" draggable="false">
-            <img src="../sports-images/nba-logo_2x.png" class="smaller-logo" draggable="false">
-            <img src="../sports-images/f1.png" class="bigger-logo" draggable="false">
-            <img src="../sports-images/MotoGP-logo.png" class="bigger-logo" draggable="false">
-            <img src="../sports-images/ffk.png" draggable="false">
-            <img src="../sports-images/basketball-ks.png" draggable="false">
+            <img src="../logo-slider-images/rtk.png" class="logo-active" draggable="false">
+            <img src="../logo-slider-images/rtv21.png" class="bigger-logo" draggable="false">
+            <img src="../logo-slider-images/klank.png" draggable="false">
+            <img src="../logo-slider-images/k10.png" draggable="false">
+            <img src="../logo-slider-images/ktv.png" class="bigger-logo" draggable="false">
+            <img src="../logo-slider-images/t7.png" draggable="false">
+            <img src="../logo-slider-images/dukagjini.png" draggable="false">
+            <img src="../logo-slider-images/klantv.png" class="bigger-logo" draggable="false">
+            <img src="../logo-slider-images/topch.png" class="bigger-logo" draggable="false">
+            <img src="../logo-slider-images/bbvk.png" draggable="false">
           </div>
         </div>  
         <!-- end -->
-    <!-- end -->
+      <!-- end -->
+
 
       <!-- Pako Ofertat -->
       <div class="container">
-        <div class="content-box">
+        <div class="content-box" id="duo-id">
           <div class="row">
             <div class="content-col">
               <!--content  -->
@@ -215,25 +225,26 @@
       <!-- end -->
       
 
-      <!-- tv kanalet -->
+          <!-- tv kanalet -->
         <!-- sports-logos -->
         <div class="container">
-          <h3 class="channels-titulli">Të gjitha kanalet kryesore</h3>
+          <h3 class="channels-titulli">Të gjitha ligat superiore</h3>
           <div class="sport-logos">
-            <img src="../logo-slider-images/rtk.png" class="logo-active" draggable="false">
-            <img src="../logo-slider-images/rtv21.png" class="bigger-logo" draggable="false">
-            <img src="../logo-slider-images/klank.png" draggable="false">
-            <img src="../logo-slider-images/k10.png" draggable="false">
-            <img src="../logo-slider-images/ktv.png" class="bigger-logo" draggable="false">
-            <img src="../logo-slider-images/t7.png" draggable="false">
-            <img src="../logo-slider-images/dukagjini.png" draggable="false">
-            <img src="../logo-slider-images/klantv.png" class="bigger-logo" draggable="false">
-            <img src="../logo-slider-images/topch.png" class="bigger-logo" draggable="false">
-            <img src="../logo-slider-images/bbvk.png" draggable="false">
+            <img src="../sports-images/champions-league.png" class="logo-active" draggable="false">
+            <img src="../sports-images/prem.png" draggable="false">
+            <img src="../sports-images/laliga.png" draggable="false">
+            <img src="../sports-images/bundesliga.png" draggable="false">
+            <img src="../sports-images/seriea.png" draggable="false">
+            <img src="../sports-images/L1.png" draggable="false">
+            <img src="../sports-images/nba-logo_2x.png" class="smaller-logo" draggable="false">
+            <img src="../sports-images/f1.png" class="bigger-logo" draggable="false">
+            <img src="../sports-images/MotoGP-logo.png" class="bigger-logo" draggable="false">
+            <img src="../sports-images/ffk.png" draggable="false">
+            <img src="../sports-images/basketball-ks.png" draggable="false">
           </div>
         </div>  
         <!-- end -->
-      <!-- end -->
+    <!-- end -->
 
         <!-- video-content -->
         <div class="video-container">

@@ -41,3 +41,11 @@ v.1.4
   - html/folder -updated
     - pagesa.html -removed
   -logo-slider-images/folder -updated
+
+v.1.5
+  - contact -updated
+  - footer -updated
+
+v.1.5.1
+  - buttons.js -removed
+  - JavaScript code inside Html -added

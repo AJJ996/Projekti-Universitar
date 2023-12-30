@@ -139,7 +139,16 @@
           <div class="main-buttons">
             <a href="" class="main-btn" id="tv-main-btn">Më Shumë</a>
           </div>
-        </div>
+      </div>
+      <!-- end -->
+
+      <!-- script of main-btn -->
+      <script>
+        document.getElementById("tv-main-btn").addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent the default button behavior
+          document.getElementById("tv-sherbimet-id").scrollIntoView({ behavior: 'smooth' });
+        });
+      </script>
       <!-- end -->
     </header>  
 

@@ -136,15 +136,24 @@
         <h2 class="main-title">përjeto fuqinë maksimale</h2>
           <h2 class="main-title-2">PREMIUM</h2>
           <div class="main-buttons">
-            <a href="" class="main-btn" id="internet-main-btn">Më Shumë</a>
+            <a href="" class="main-btn" id="premium-main-btn">Më Shumë</a>
           </div>
-        </div>
+      </div>
+      <!-- end -->
+
+      <!-- script of main-btn -->
+      <script>
+        document.getElementById("premium-main-btn").addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent the default button behavior
+          document.getElementById("premium-id").scrollIntoView({ behavior: 'smooth' });
+        });
+      </script>
       <!-- end -->
     </header>  
     <!-- header end -->
 
       <!-- sherbimet -->
-      <div class="container" id="net-id">
+      <div class="container" id="premium-id">
         <div class="net">
           <h2 class="sherbimet-titulli">Shërbime Premium</h2>
           <h6 class="sherbimet-nentitulli">zgjedhni pakon që ju përshtatet</h6>

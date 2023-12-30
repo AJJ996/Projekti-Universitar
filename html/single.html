@@ -139,9 +139,19 @@
           <div class="main-buttons">
             <a href="" class="main-btn" id="internet-main-btn">Më Shumë</a>
           </div>
-        </div>
+      </div>
+      <!-- end -->
+
+      <!-- script of main-btn -->
+      <script>
+        document.getElementById("internet-main-btn").addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent the default button behavior
+          document.getElementById("net-id").scrollIntoView({ behavior: 'smooth' });
+        });
+      </script>
       <!-- end -->
     </header>  
+    <!-- header end -->
 
     
       <!-- net sherbimet -->

@@ -141,6 +141,15 @@
             </div>
         </div>
         <!-- end -->
+
+        <!-- script of main-btn -->
+        <script>
+          document.getElementById("about-main-btn").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default button behavior
+            document.getElementById("timeline").scrollIntoView({ behavior: 'smooth' });
+          });
+        </script>
+        <!-- end -->
       </header>
       <!-- end -->
 
