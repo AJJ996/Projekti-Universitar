@@ -5,6 +5,48 @@
   outline: none;
   font-family: 'Poppins', sans-serif;
 }
+
+/* loader */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75, visibility 0.75s;
+}
+
+.loader img {
+  width: 100px; 
+  height: auto;
+  animation: loading 0.75s ease infinite; 
+}
+
+@media(max-width: 767px){
+  .loader img{
+    width: 60px;
+  }
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* end */
+
 body{
   display: flex;
   align-items: center;

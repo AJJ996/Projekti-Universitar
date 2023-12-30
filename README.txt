@@ -49,3 +49,8 @@ v.1.5
 v.1.5.1
   - buttons.js -removed
   - JavaScript code inside Html -added
+
+v.1.5.2
+  - maxtv/folder -edited
+  - login/folder -edited
+    - loader -added
