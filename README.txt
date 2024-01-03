@@ -54,3 +54,15 @@ v.1.5.2
   - maxtv/folder -edited
   - login/folder -edited
     - loader -added
+
+v.1.5.3
+  - html/folder -edited
+    - "Porosit Tani"/buttons -edited
+  - css/folder -edited
+    - "back-to-top"/button -edited
+
+v.1.6
+  - html/folder -edited
+    - html/classes -edited //inicialet
+    - html/body -edited
+      -id="maxtv"
