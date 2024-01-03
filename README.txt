@@ -66,3 +66,7 @@ v.1.6
     - html/classes -edited //inicialet
     - html/body -edited
       -id="maxtv"
+
+v.1.6.1
+  - html/folder -edited
+    -loader -edited
