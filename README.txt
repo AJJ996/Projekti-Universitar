@@ -80,3 +80,9 @@ v.1.7.1
 
 v.1.7.2
   - docs/folder -edited
+
+v.1.7.3
+  - index.html -edited
+
+v.1.7.4
+  index.html -edited
