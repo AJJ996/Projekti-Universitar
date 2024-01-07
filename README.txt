@@ -74,3 +74,6 @@ v.1.6.1
 v.1.7
   - html/folder -renamed to docs
   - footer -edited
+
+v.1.7.1
+  - html/folder -edited
