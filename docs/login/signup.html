@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+  <html lang="en">
+      <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width , initial-scale=1.0">
+         <link rel="stylesheet" href="../login/signup.css">
+         <link rel="icon" type="image/svg+xml" href="../images/favicon.png ">
+         <title>MaxTv | SignUp</title>
+
+         <!-- scripts -->
+         <script src="../js/loader.js" defer></script>
+         <!-- end -->
+
+         <!-- cdnjs and fonts-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+         <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>  
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+         <!-- end -->
+      </head>
+
+
+
+
+
+
+      <body id="maxtv">
+         <div class="aj container">
+            <header>Signup</header>
+            <div class="aj progress-bar">
+               <div class="aj step">
+                  <p>
+                     Name
+                  </p>
+                  <div class="aj bullet">
+                     <span>1</span>
+                  </div>
+                  <div class="aj check fas fa-check"></div>
+               </div>
+               <div class="aj step">
+                  <p>
+                     Contact
+                  </p>
+                  <div class="aj bullet">
+                     <span>2</span>
+                  </div>
+                  <div class="aj check fas fa-check"></div>
+               </div>
+               <div class="aj step">
+                  <p>
+                     Birth
+                  </p>
+                  <div class="aj bullet">
+                     <span>3</span>
+                  </div>
+                  <div class="aj check fas fa-check"></div>
+               </div>
+               <div class="aj step">
+                  <p>
+                     Submit
+                  </p>
+                  <div class="aj bullet">
+                     <span>4</span>
+                  </div>
+                  <div class="aj check fas fa-check"></div>
+               </div>
+            </div>
+            <div class="aj form-outer">
+               <form action="connect.php" method="post">
+                  <div class="aj page slide-page">
+                     <div class="aj title">
+                        Basic Info:
+                     </div>
+                     <div class="field">
+                        <div class="aj label">
+                           First Name
+                        </div>
+                        <input type="text" id="firstName" name="firstName">
+                     </div>
+                     <div class="aj field">
+                        <div class="aj label">
+                           Last Name
+                        </div>
+                        <input type="text" id="lastName" name="lastName">
+                     </div>
+                     <div class="aj field">
+                        <button class="aj firstNext next">Next</button>
+                     </div>
+                  </div>
+                  <div class="aj page">
+                     <div class="aj title">
+                        Contact Info:
+                     </div>
+                     <div class="aj field">
+                        <div class="aj label">
+                           Email Address
+                        </div>
+                        <input type="text" id="email" name="email">
+                     </div>
+                     <div class="aj field">
+                        <div class="aj label">
+                           Phone Number
+                        </div>
+                        <input type="Number" id="number" name="number">
+                     </div>
+                     <div class="aj field btns">
+                        <button class="aj prev-1 prev">Previous</button>
+                        <button class="aj next-1 next">Next</button>
+                     </div>
+                  </div>
+                  <div class="aj page">
+                     <div class="aj title">
+                        Date of Birth:
+                     </div>
+                     <div class="aj field">
+                        <div class="aj label">
+                           Date
+                        </div>
+                        <input type="date" id="date" name="date">
+                     </div>
+                     <div class="aj field">
+                        <div class="aj label">
+                           Gender
+                        </div>
+                        <select>
+                           <option>Male</option>
+                           <option>Female</option>
+                           <option>Other</option>
+                        </select>
+                     </div>
+                     <div class="aj field btns">
+                        <button class="aj prev-2 prev">Previous</button>
+                        <button class="aj next-2 next">Next</button>
+                     </div>
+                  </div>
+                  <div class="aj page">
+                     <div class="aj title">
+                        Login Details:
+                     </div>
+                     <div class="aj field">
+                        <div class="aj label">
+                           Username
+                        </div>
+                        <input type="text" id="username" name="username">
+                     </div>
+                     <div class="aj field">
+                        <div class="aj label">
+                           Password
+                        </div>
+                        <input type="password" id="password" name="password">
+                     </div>
+                     <div class="aj field btns">
+                        <button class="aj prev-3 prev">Previous</button>
+                        <button class="aj submit">Submit</button>
+                     </div>
+                  </div>
+               </form>
+               <a href="../login/login.html" class="aj back-login">Already have a account ?</a><br>
+               <a href="../index.html" class="aj back-home">Go back home</a>
+            </div>
+         </div>
+         <script src="../js/signup.js"></script>
+
+         <!-- loading screen -->
+         <div class="loader"><img src="../images/favicon.png"></div>
+         <!-- end of loading screen -->
+      </body>
+   </html>

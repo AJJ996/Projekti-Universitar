@@ -86,3 +86,15 @@ v.1.7.3
 
 v.1.7.4
   index.html -edited
+
+v.1.7.5
+  index.html -edited
+
+v.1.8
+  css/folder -moved to docs
+  js/folder -moved to docs
+  sports-images/folder -moved to docs
+  shop-images/folder -moved to docs
+  images/folder -moved to docs
+  copyrights/folder -moved to docs
+  logo-slider-images/folder -moved to docs
