@@ -76,4 +76,7 @@ v.1.7
   - footer -edited
 
 v.1.7.1
-  - html/folder -edited
+  - docs/folder -edited
+
+v.1.7.2
+  - docs/folder -edited
