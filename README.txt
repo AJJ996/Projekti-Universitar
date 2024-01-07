@@ -98,3 +98,6 @@ v.1.8
   images/folder -moved to docs
   copyrights/folder -moved to docs
   logo-slider-images/folder -moved to docs
+
+v.1.8.1
+  - about.html -updated
